@@ -1,10 +1,8 @@
 package testNG;
 
-import java.sql.Driver;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,8 +22,8 @@ public class testNGWebDriverDemo {
   }
   @BeforeMethod
   public void beforeMethod() {
-	  System.setProperty("WebDriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-	  driver = new FirefoxDriver();
+	  System.setProperty("webdriver.chrome.driver", "D:\\Download\\chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
 	  
   }
 

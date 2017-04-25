@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 
@@ -14,8 +15,8 @@ public class testBaidu {
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		System.setProperty("WebDriver.firefox.bin", "C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Download\\chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
 	  }
 
 	@AfterMethod
